@@ -7,12 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tutorial" />
+        <module name="sonarqube-tutorial" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tutorial" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sonarqube-tutorial" options="-parameters" />
       <module name="tutorial" options="-parameters" />
     </option>
   </component>

@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "4853f258-4bcf-4540-bb2f-8e7703de2aa4",
+		"name": "Sonarqube Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7110933"
+	},
+	"item": [
+		{
+			"name": "Calculate",
+			"item": [
+				{
+					"name": "Calculate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"MR\",\r\n    \"name\": \"Sachith Ariythilaka\",\r\n    \"age\": 27\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/calculate/?operation=ADDITION&value1=10&value2=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"calculate",
+								""
+							],
+							"query": [
+								{
+									"key": "operation",
+									"value": "ADDITION"
+								},
+								{
+									"key": "value1",
+									"value": "10"
+								},
+								{
+									"key": "value2",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
