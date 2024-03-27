@@ -27,13 +27,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8090/api/calculate/?operation=ADDITION&value1=10&value2=10",
+							"raw": "http://localhost:8090/sonarqube-tutorial/api/calculate/?operation=Addition&value1=10&value2=10",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8090",
 							"path": [
+								"sonarqube-tutorial",
 								"api",
 								"calculate",
 								""
@@ -41,7 +42,7 @@
 							"query": [
 								{
 									"key": "operation",
-									"value": "ADDITION"
+									"value": "Addition"
 								},
 								{
 									"key": "value1",

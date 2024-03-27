@@ -19,4 +19,4 @@ Spring boot SonarQube tutorial project.
   * Module: Sonarqube Tutorial
   * Changes
     * Implements the calculate rest endpoint.
-    * Implements the service layer for the calculate endpoint.
+    * Implement the service layer for the calculated endpoint.

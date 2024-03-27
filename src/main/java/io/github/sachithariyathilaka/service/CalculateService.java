@@ -1,14 +1,12 @@
 package io.github.sachithariyathilaka.service;
 
-import io.github.sachithariyathilaka.enums.OperationEnum;
-
 /**
- * Service layer for the calculate functionalities.
+ * Service layer for the calculated functionalities.
  *
  * @author  Sachith Ariyathilaka
  * @version 1.0.0
  * @since   2024/03/24
  */
 public interface CalculateService {
-    int calculate(OperationEnum operationEnum, int value1, int value2);
+    int calculate(String operation, int value1, int value2);
 }

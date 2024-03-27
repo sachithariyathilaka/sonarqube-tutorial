@@ -1,6 +1,5 @@
 package io.github.sachithariyathilaka.controller;
 
-import io.github.sachithariyathilaka.enums.OperationEnum;
 import io.github.sachithariyathilaka.resource.APIResponse;
 import io.github.sachithariyathilaka.service.CalculateService;
 import org.springframework.http.HttpStatus;
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Controller layer for the organize rest endpoints.
+ * Controller layer for the organized rest endpoints.
  *
  * @author  Sachith Ariyathilaka
  * @version 1.0.0
@@ -38,7 +37,7 @@ public class CalculateController {
      */
     @GetMapping("/")
     public ResponseEntity<APIResponse<Integer>> calculate(
-            @RequestParam("operation") OperationEnum operation,
+            @RequestParam("operation") String operation,
             @RequestParam("value1") int value1,
             @RequestParam("value2") int value2) {
 
