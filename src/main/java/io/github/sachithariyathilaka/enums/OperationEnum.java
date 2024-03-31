@@ -1,5 +1,8 @@
 package io.github.sachithariyathilaka.enums;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 /**
  * Enum class for the handle operations.
  *
@@ -29,15 +32,7 @@ public enum OperationEnum {
 
     public static OperationEnum lookUp(String name) {
 
-        if (OperationEnum.ADDITION.isEqual(name))
-            return OperationEnum.ADDITION;
-        else if (OperationEnum.SUBTRACTION.isEqual(name))
-            return OperationEnum.SUBTRACTION;
-        else if (OperationEnum.MULTIPLICATION.isEqual(name))
-            return OperationEnum.MULTIPLICATION;
-        else if (OperationEnum.DIVISION.isEqual(name))
-            return OperationEnum.DIVISION;
-        else
-            return null;
+        Optional<OperationEnum> instance = Arrays.stream(values()).filter(operationEnum -> operationEnum.getValue().equals(name)).findFirst();
+        return instance.orElse(null);
     }
 }
