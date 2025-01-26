@@ -9,13 +9,13 @@ Spring boot SonarQube tutorial project.
   * SonarQube
   * Lombok
 
-* ### Configuration
-  * https://sachithariyathilaka.medium.com/sonarqube-613dbf9a7f77
+* ### Documentation
+  * [Read on Medium](https://sachithariyathilaka.medium.com/sonarqube-613dbf9a7f77)
   
 * ### Release Note
 
-  * Release: 1.0.0
-  * Date: 2024/03/24
+  * Version: 1.0.0
+  * Release Date: 2024/03/24
   * Module: Sonarqube Tutorial
   * Changes
     * Implements the calculate rest endpoint.
